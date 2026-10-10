@@ -52,7 +52,7 @@ function formatNow() {
   const d = new Date();
   const date = `${pad(d.getDate())}.${pad(d.getMonth() + 1)}.${d.getFullYear()}`;
   const time = `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
-  return `${date} — ${time}`;
+  return `${date} · ${time}`;
 }
 
 scrambleTo(formatNow());
